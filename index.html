@@ -15,36 +15,35 @@
   <div class="main-container">
     <div class="row-container top-bar">
       <div class="logo">        
-        <img src="./images/logo.svg"  alt="W logo" width=84 height="28"/>
+        <img src="./images/logo.svg"  alt="Snap logo" width=84 height="28"/>
       </div>
       <nav id="top-nav">
         <a href="#h1" class="skip-nav-link">Skip to main content</a>
-        <div id="menu-icon"><img src="./images/icon-menu.svg" alt="open menu" width="40" height="17"/></div>
+        <button type="button" id="menu-icon" aria-haspopup="true" aria-expanded="false" aria-label="Open menu"></button>
         <div id="top-nav-container" >
           
-          <ul id="nav-ul">
-            <li id="close-icon"><img src="./images/icon-close-menu.svg" alt="open menu" width="32" height="32"/></li>
-            <li><a href="" class="dropdown nav-link margin" onclick="return false;">Features</a>
-              <ul class="dropdownUL">
-                <li><a href="" class="link-todo" >Todo List</a></li>
-                <li><a href="" class="link-calendar">Calendar</a></li>
-                <li><a href="" class="link-reminders">Reminders</a></li>
-                <li><a href="" class="link-planning">Planning</a></li>
+          <ul id="nav-ul">            
+            <li><button type="button" class="dropdown nav-link margin" aria-haspopup="true" aria-expanded="false" >Features</button>
+              <ul class="dropdownUL" aria-hidden="true">
+                <li><a href="#" class="link-todo" aria-hidden="true" tabindex="-1">Todo List</a></li>
+                <li><a href="#" class="link-calendar" aria-hidden="true" tabindex="-1">Calendar</a></li>
+                <li><a href="#" class="link-reminders" aria-hidden="true" tabindex="-1">Reminders</a></li>
+                <li><a href="#" class="link-planning" aria-hidden="true" tabindex="-1">Planning</a></li>
               </ul>
             </li>
-            <li><a href="" class="dropdown nav-link" onclick="return false;">Company</a>
-              <ul class="dropdownUL">
-                <li><a href="">History</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Blog</a></li>
+            <li><button type="button" class="dropdown nav-link" aria-haspopup="true" aria-expanded="false">Company</button>
+              <ul class="dropdownUL" aria-hidden="true">
+                <li><a href="#" aria-hidden="true" tabindex="-1">History</a></li>
+                <li><a href="#" aria-hidden="true" tabindex="-1">Our Team</a></li>
+                <li><a href="#" aria-hidden="true" tabindex="-1">Blog</a></li>
               </ul>
             </li>
-            <li><a href="" >Careers</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#" >Careers</a></li>
+            <li><a href="#">About</a></li>
           </ul>
           <ul id="user-actions">
-            <li id="login"><a href="" class="nav-link">Login</a></li>
-            <li id="register" ><a href=""  class="nav-link">Register</a></li>
+            <li id="login"><a href="#" class="nav-link">Login</a></li>
+            <li id="register" ><a href="#"  class="nav-link">Register</a></li>
           </ul>         
         </div>     
       </nav>
@@ -61,7 +60,7 @@
               Get your team in sync, no matter your location. Streamline processes, 
               create team rituals, and watch productivity soar.
             </p>
-            <a href="" class="btn">Learn more</a>
+            <a href="#" class="btn">Learn more</a>
           </span>
           <div class="client-logos">
             <ul>
